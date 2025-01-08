@@ -6,7 +6,7 @@
         <div class="col-md-10 col-lg-8 col-xl-7">
           <div class="site-heading">
             <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <span class="subheading">Post by tag {{}}</span>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
       <div class="col-md-10 col-lg-8 col-xl-7">
         <div v-if="error">{{ error }}</div>
         <div v-if="posts.length">
-          <SinglePost v-for="post in posts" :key="post.id" :post="post" />
+          <SinglePost v-for="post in postWithTag" :key="post.id" :post="post" />
         </div>
         <div v-else>
           <Loading />
@@ -30,13 +30,16 @@
 
 <script setup>
 import Loading from "@/components/Loading.vue";
-import SinglePost from "../components/posts/SinglePost.vue";
-import getPosts from "../composable/getPosts";
-import { onMounted } from "vue";
+import SinglePost from "@/components/posts/SinglePost.vue";
+import getPosts from "@/composable/getPosts";
+import { useRoute } from "vue-router";
+import { computed } from "vue";
 
+const route = useRoute();
 const { posts, error, load } = getPosts();
 load();
-onMounted(() => {
-  console.log($(".para").text());
+
+const postWithTag = computed(() => {
+  return posts.value.filter((post) => post.tags.includes(route.params.tag));
 });
 </script>

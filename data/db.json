@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Artikel Pertama",
+      "body": "JSON (JavaScript Object Notation) adalah format data yang digunakan untuk menyimpan, membaca, dan menukar informasi dari web server. JSON merupakan standar terbuka berbasis teks yang dirancang untuk mudah dibaca oleh manusia dan komputer.",
+      "tags": [
+        "web",
+        "vue",
+        "js",
+        "json"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Artikel Kedua",
+      "body": "Server adalah sistem komputer yang menyediakan layanan, sumber daya, atau data kepada perangkat lain yang disebut klien. Server merupakan komponen penting dalam jaringan komputer dan memiliki peran utama sebagai penyedia layanan bagi perangkat lain yang terhubung dengannya. s",
+      "tags": [
+        "mysql",
+        "vue",
+        "mongodb"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Artikel Ketiga",
+      "body": "Server adalah sistem komputer yang menyediakan layanan, sumber daya, atau data kepada perangkat lain yang disebut klien. Server merupakan komponen penting dalam jaringan komputer dan memiliki peran utama sebagai penyedia layanan bagi perangkat lain yang terhubung dengannya. ",
+      "tags": [
+        "react",
+        "php",
+        "js",
+        "json"
+      ]
+    },
+    {
+      "id": "a6d4",
+      "title": "",
+      "body": "a",
+      "tags": []
+    },
+    {
+      "id": "52fb",
+      "title": "PT. Yogya",
+      "body": "hai guys selamat datang di rumah hantu",
+      "tags": [
+        "js",
+        "vue3"
+      ]
+    }
+  ]
+}
